@@ -59,7 +59,7 @@ def require_jwt(function):
 
 @APP.route('/', methods=['POST', 'GET'])
 def health():
-    return jsonify("Healthy")
+    return jsonify("Healthy - Update from Nitesh to check cluster")
 
 
 @APP.route('/auth', methods=['POST'])
@@ -113,3 +113,4 @@ def _get_jwt(user_data):
 
 if __name__ == '__main__':
     APP.run(host='127.0.0.1', port=8080, debug=True)
+ #   APP.run(host='127.0.0.1', port=5000, debug=True)  ---Used port 5000 in local as 8080 was used by postgres in local
