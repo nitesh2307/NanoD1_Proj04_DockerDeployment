@@ -25,7 +25,7 @@ def client():
 def test_health(client):
     response = client.get('/')
     assert response.status_code == 200
-    assert response.json == 'Healthy - Update from Nitesh to check cluster'
+    assert response.json == 'Healthy - Updated for failing testcase'
 
 
 def test_auth(client):
